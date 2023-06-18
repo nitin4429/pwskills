@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hovering {
+            position: relative;
+            top: 100px;
+            left:300px;
+            display: inline-block;
+        }
+
+        span {
+            background-color: #ee5b5b;
+            color: aliceblue;
+            padding: 10px;
+        }
+
+        .dropdown-menu {
+            overflow-y: scroll;
+            width: 169px;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            max-height: 114px;
+            top: 29px;
+            display: none;
+        }
+
+        .dropdown-content {
+            padding: 5px;
+            cursor:pointer;
+        }
+
+        .hovering:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hovering">
+        <span>Hover TO View Option</span>
+        <div class="dropdown-menu">
+            <div class="dropdown-content">Option1</div>
+            <div class="dropdown-content">Option2</div>
+            <div class="dropdown-content">Option3</div>
+            <div class="dropdown-content">Option4</div>
+            <div class="dropdown-content">Option5</div>
+            <div class="dropdown-content">Option6</div>
+            <div class="dropdown-content">Option6</div>
+            <div class="dropdown-content">Option7</div>
+            <div class="dropdown-content">Option8</div>
+            <div class="dropdown-content">Option9</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
